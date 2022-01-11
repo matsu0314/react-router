@@ -1,8 +1,7 @@
 import { useLocation, useHistory } from "react-router-dom";
-const history = useHistory();
-const onClickBack = () => history.goBack();
-
 export const Page1DetailA = () => {
+  const history = useHistory();
+  const onClickBack = () => history.goBack();
   const { state: location } = useLocation();
   console.log(location);
   return (
